@@ -1,0 +1,138 @@
+.entery_page_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  border: 20px solid rgb(255, 255, 255);
+  .logo {
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #ffffff;
+    height: 110px;
+    border-radius: 0px 0px 50px 50px;
+    width: 337px;
+    font-size: 16px;
+    font-family: sans-serif, 'inter';
+    line-height: 19.36px;
+    font-weight: 700;
+    img {
+      width: 50px;
+      height: 47.3px;
+    }
+  }
+  .center_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    z-index: 1;
+    .food_box_img {
+      width: 135px;
+      height: 135px;
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        color: #486fe6;
+        line-height: 66.39px;
+        font-weight: 700;
+        font-size: 35px;
+      }
+      p {
+        color: #000000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30.35px;
+      }
+    }
+    .start_button {
+      .button {
+        cursor: pointer;
+        display: flex;
+        background-color: #171938;
+        width: 337px;
+        height: 101px;
+        border-radius: 50px;
+        justify-content: flex-end;
+        color: white;
+        font-size: 30px;
+        line-height: 56.91px;
+        font-weight: 700;
+        align-items: center;
+        gap: 45px;
+        img {
+          width: 75px;
+          height: 75px;
+          border-radius: 50px;
+          background-color: white;
+          padding: 20px;
+          margin-left: 14px;
+        }
+      }
+    }
+  }
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #f9f9ff;
+    border: 18px solid white;
+    border-radius: 35px;
+    overflow: hidden;
+    .blue_circle {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .rose_circle {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .background_icon {
+      position: absolute;
+      &.icon1 {
+        top: 20%;
+        right: 350px;
+      }
+      &.icon2 {
+        top: 20%;
+        left: 350px;
+      }
+      &.icon3 {
+        top: 40%;
+        right: 100px;
+      }
+      &.icon4 {
+        top: 40%;
+        left: 100px;
+      }
+      &.icon5 {
+        top: 70%;
+        right: 200px;
+      }
+      &.icon6 {
+        top: 70%;
+        left: 200px;
+      }
+      &.icon7 {
+        top: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

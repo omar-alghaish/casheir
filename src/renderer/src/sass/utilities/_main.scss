@@ -1,0 +1,17 @@
+@font-face {
+  font-family: Noto Kufi Arabic;
+  src: url('../../assets/fonts/NotoKufiArabic-Medium.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  direction: rtl;
+  font-family: Noto Kufi Arabic;
+}
+
+a {
+  text-decoration: none;
+}
