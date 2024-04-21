@@ -97,6 +97,9 @@
           font-weight: 700;
           flex-direction: column;
           position: relative;
+          color: black;
+          cursor: pointer;
+          
           .img{
             width: 60px;
             height: 60px;
@@ -108,7 +111,7 @@
             right: 10px;
           }
           p{
-            margin-top: 50px
+            margin-top: 60px
           }
         }
       }

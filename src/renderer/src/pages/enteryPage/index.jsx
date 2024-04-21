@@ -13,15 +13,22 @@ import img6 from '../../assets/icons/tomato.svg'
 import img7 from '../../assets/icons/vegetable.svg'
 
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import LoadingPage from '../../components/loadingPage/LoadingPage'
 const EnteryPage = () => {
+  const [isloading, setIsLoading] = useState(true)
   useEffect(() => {
     setTimeout(() => {
-       const theLogo = document.querySelector('.entery_page_container .logo')
-    theLogo.classList.add('move')  
-    }, 100);
-   
+      const theLogo = document.querySelector('.entery_page_container .logo')
+      theLogo.classList.add('move')
+    }, 100)
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 2000)
   }, [])
+  if (isloading) {
+    return <LoadingPage />
+  }
   return (
     <div className="entery_page_container">
       <div className="background">
@@ -36,7 +43,7 @@ const EnteryPage = () => {
         <img src={img7} className="background_icon icon7" />
       </div>
       <div className="logo">
-      <p>Code Spark company</p>   <img src={logo} alt="" />
+        <p>Code Spark company</p> <img src={logo} alt="" />
       </div>
       <div className="center_content">
         <div className="food_box_img">

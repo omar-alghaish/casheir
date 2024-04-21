@@ -11,6 +11,7 @@ import img8 from '../../assets/icons/home-icons/sale.png'
 import img9 from '../../assets/icons/home-icons/scan.png'
 import img10 from '../../assets/icons/home-icons/3d-magnifier.png'
 import img11 from '../../assets/icons/home-icons/operational-cost.png'
+import { Link } from 'react-router-dom'
 
 const OparationsList = () => {
   const list = [
@@ -66,7 +67,7 @@ const OparationsList = () => {
     },
     {
       title: 'بحث واستعلام وبيع',
-      link: '',
+      link: '/pos-sale',
       image: img5
     }
   ]
@@ -80,11 +81,15 @@ const OparationsList = () => {
         </div>
       </div>
       <div className="links">
-        {list.map((item) => (
-          <div className="link">
-            <div className="img"><img src={item.image} alt="" /></div>
-           <p>{item?.title}</p> 
-          </div>
+        {list.map((item, index) => (
+          <Link to={item.link} key={index}>
+            <div className="link">
+              <div className="img">
+                <img src={item.image} alt="" />
+              </div>
+              <p>{item?.title}</p>
+            </div>
+          </Link>
         ))}
       </div>
     </div>
