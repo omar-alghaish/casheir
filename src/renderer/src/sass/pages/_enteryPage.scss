@@ -6,6 +6,21 @@
   min-height: 100vh;
   border: 20px solid rgb(255, 255, 255);
   .logo {
+    top: 20px;
+    padding: 0;
+    height: max-content;
+    position: absolute;
+    left: 20px;
+    transition: 0.3s;
+    img {
+      width: 60px;
+      padding: 10px;
+    }
+    p {
+      display: none;
+    }
+  }
+  .logo.move {
     position: absolute;
     top: 0;
     display: flex;
@@ -20,9 +35,15 @@
     font-family: sans-serif, 'inter';
     line-height: 19.36px;
     font-weight: 700;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.3s;
     img {
       width: 50px;
       height: 47.3px;
+    }
+    p {
+      display: block;
     }
   }
   .center_content {
