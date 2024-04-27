@@ -1,11 +1,14 @@
 import { useNavigate } from 'react-router-dom'
 import { FaArrowRight } from 'react-icons/fa'
+import { useDispatch } from 'react-redux'
+import { setCurrentCategory } from '../../redux/features/products'
 
 
 const BackButton = () => {
+  const dispatch = useDispatch()
   const navigate = useNavigate()
   const handleGoBack = () => {
-    
+    dispatch(setCurrentCategory(""))
     navigate(-1)
   }
 

@@ -21,13 +21,18 @@ const OparationsList = () => {
       image: img9
     },
     {
+      title: 'اضافة منتج',
+      link: '/addProduct',
+      image: img9
+    },
+    {
       title: 'مصروفات وايرادات',
       link: '',
       image: img11
     },
     {
       title: 'بحث واستعلام',
-      link: '',
+      link: '/categories',
       image: img10
     },
     {

@@ -6,7 +6,7 @@ import SideCart from './components/SideCart'
 const PosSale = () => {
   return (
     <div className="pos_sale_page">
-      {/* <BackButton /> */}
+      <BackButton />
       <div className='main_content_products'>
         <ProductsList />
         <BottomBar />

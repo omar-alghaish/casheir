@@ -1,0 +1,87 @@
+.modal_container.active {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: .3s;
+  visibility: visible;
+  z-index: 11111;
+  .background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.662);
+    
+  }
+  .modal_content {
+    z-index: 1;
+  }
+  .close_button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: white;
+      color: #000000;
+    }
+  }
+}
+
+.modal_container{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transition: .3s;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  .background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.662);
+    
+  }
+  .modal_content {
+    z-index: 1;
+  }
+  .close_button {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      background-color: white;
+      color: #000000;
+    }
+  }
+}
