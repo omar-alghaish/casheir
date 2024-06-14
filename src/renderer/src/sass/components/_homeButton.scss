@@ -1,0 +1,14 @@
+.home_button {
+    background-color: #303030;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    cursor: pointer;
+    img {
+      width: 100%;
+    }
+  }

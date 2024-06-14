@@ -67,7 +67,7 @@ const OparationsList = () => {
     },
     {
       title: 'التقارير',
-      link: '',
+      link: '/reports',
       image: img2
     },
     {

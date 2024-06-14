@@ -6,6 +6,8 @@ import Home from './pages/home/Home'
 import Login from './pages/login/login'
 import PosSale from './pages/pos-sale/PosSale'
 import Print from './pages/print/Print'
+import Reports from './pages/reports/Reports'
+import SalesReports from './pages/reports/components/SalesReports'
 import './sass/style.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
@@ -22,6 +24,8 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/categories-products" element={<CategoriesProducts />} />
           <Route path="/addProduct" element={<AddProduct />} />
+          <Route path="/reports" element={<Reports />} />
+          <Route path="/sales-reports" element={<SalesReports />} />
         </Routes>
       </BrowserRouter>
     </div>

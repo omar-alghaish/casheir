@@ -209,11 +209,21 @@
       flex-direction: column;
       gap: 20px;
       position: relative;
+      .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .home_button{
+        position: absolute;
+        right: 20px;
+        }
+      }
       .categories_list_container {
         display: flex;
         gap: 20px;
         border-radius: 16px;
         align-items: center;
+        
         button {
           height: max-content;
           border: #ffa600 1px solid;
@@ -442,7 +452,10 @@
   }
 }
 
-.categories_list_container {
+.categories_list_container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 20px;
   .category {
     display: flex;
     flex-direction: column;
@@ -465,5 +478,6 @@
     padding: 5px;
     display: flex;
     justify-content: center;
+    font-size: 10px;
   }
 }

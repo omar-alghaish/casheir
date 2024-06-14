@@ -17,7 +17,7 @@ const SideCart = () => {
   const handleDeleteCurrentCart = () => {
     dispatch(deleteCurrentCart())
   }
-  const handleDeleteItem =(id)=>{
+  const handleDeleteItem = (id) => {
     dispatch(deleteItemById(id))
   }
   return (
@@ -55,7 +55,9 @@ const SideCart = () => {
                     <div className="row_data title">{item?.title}</div>
                     <div className="row_data ">{item?.quantity}</div>
                     <div className="row_data ">{item?.price}</div>
-                    <div className='delete' onClick={()=>handleDeleteItem(item?.id)}><IoMdClose /></div>
+                    <div className="delete" onClick={() => handleDeleteItem(item?.id)}>
+                      <IoMdClose />
+                    </div>
                   </div>
                 )
               })}
@@ -82,13 +84,13 @@ const SideCart = () => {
           </div>
         </div>
       )}
-      {
-        currentCart?.items?.length > 0 && <div className="bottom_buttons">
-        <button>بيع</button> <button onClick={handleDeleteCurrentCart}>حذف المعامله الحاليه</button>
-        <button onClick={openModal}>عرض الايصال</button>
-      </div>
-      }
-     
+      {currentCart?.items?.length > 0 && (
+        <div className="bottom_buttons">
+          <button>بيع</button>{' '}
+          <button onClick={handleDeleteCurrentCart}>حذف المعامله الحاليه</button>
+          <button onClick={openModal}>عرض الايصال</button>
+        </div>
+      )}
     </div>
   )
 }

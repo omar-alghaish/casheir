@@ -1,0 +1,107 @@
+.date_input {
+  //   background-color: blue;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  .input_header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+    .select_container{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        .value{
+            border: 1px solid #c1c1c1;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+           padding: 10px;
+           cursor: pointer;
+        }
+        .options{
+            overflow: hidden;
+            position: absolute;
+            top: 109%;
+            background-color: white;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.115);
+            width: 100%;
+            border-radius: 10px;
+            width: 0;
+            height: 0;
+            transition: .3s;
+
+            &.active{
+                          padding: 10px;
+  
+                height: max-content;
+                width: 100%;
+            }
+        .select_option{
+
+       }     
+        }
+      
+    }
+  }
+  .calender_container {
+    width: 100%;
+    .days {
+      display: grid;
+      width: 100%;
+      border-radius: 10px;
+      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+      gap: 20px;
+      border: 1px solid #c1c1c1;
+      aspect-ratio: 1/1;
+      .day {
+        width: 100%;
+        border: 1px solid #c1c1c1;
+        aspect-ratio: 1/1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.3s;
+        &.active {
+          background-color: #6480f7;
+          border-color: #6480f7;
+          color: white;
+        }
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    button {
+      border-radius: 10px;
+      border: none;
+      width: max-content;
+      padding: 15px 30px;
+      background: #6480f7;
+      cursor: pointer;
+      color: white;
+    }
+    .date_info {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      border: #c1c1c1 1px solid;
+      border-radius: 10px;
+      height: 100%;
+    }
+  }
+}

@@ -6,6 +6,7 @@ import arrowLeft from '../../../assets/icons/ArrowLeft.svg'
 import { useDispatch, useSelector } from 'react-redux'
 import { setCurrentCart } from '../../../redux/features/cartSlice'
 import { setCurrentCategory, setProducts } from '../../../redux/features/products'
+import HomeButton from '../../../components/homeButton/HomeButton'
 const ProductsList = () => {
   const { categories_list, products } = useSelector((state) => state.products)
 
@@ -100,6 +101,7 @@ const ProductsList = () => {
     theContainer.classList.remove('active')
     setIsAllCategories(false)
     setSelectedCategory()
+    dispatch(setCurrentCategory(""))
   }
 
   const handleSelectCategory = (e) => {
@@ -116,7 +118,11 @@ const ProductsList = () => {
 
   return (
     <div className="products_list">
-      <Search />
+      <div className="header">
+        <HomeButton />
+        <Search /> 
+      </div>
+     
 
       <div className="center">
         <div className="categories_list_container">
@@ -149,7 +155,7 @@ const ProductsList = () => {
             )}
           </div>
           {isAllCategories ? (
-            <div className="categories_list_container">
+            <div className="categories_list_container2">
               {categories_list.map((item, index) => {
                 return (
                   <div

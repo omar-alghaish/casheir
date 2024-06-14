@@ -7,7 +7,7 @@ const initialState = {
       title: 'لحوم',
       img: 'https://assets.clevelandclinic.org/transform/37277655-04cc-4296-9ba2-54b9ba9c8811/various-raw-Red-Meats-1315903639-967x544-1_jpg',
       products: [
-        { id: 1, title: 'لحم بقري طازج', price: 20, discount: 10.3 },
+        { id: 1, title: 'لحم بقري طازج', price: 20, discount: 10.3, barcode: '6221236909620' },
         { id: 2, title: 'لحم مفروم', price: 10 },
         { id: 3, title: 'لحم غنم', price: 50 }
       ]
